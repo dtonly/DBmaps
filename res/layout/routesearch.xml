@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include 
+        android:gravity="center" 
+        android:id="@+id/nav_header_bar" 
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/common_topbar_high" 
+        android:layout_alignParentTop="true" 
+        layout="@layout/common_topbar_route" />
+    <RelativeLayout 
+        android:id="@+id/body_layout" 
+        android:background="#ffededed" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">       
+            <include 
+                layout="@layout/route_edit_search" />        
+    </RelativeLayout>
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+		<com.dt.dbmap.MyMapView android:id="@+id/bmapView"
+		    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		    android:clickable="true"     
+		/>		
+		 <LinearLayout	       
+	        android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_marginRight="10dp"
+    	    android:layout_marginTop="10dip"
+    	     android:orientation="vertical"
+	        android:layout_alignWithParentIfMissing="false">		
+    		</LinearLayout>
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="10dip"
+	        android:layout_alignWithParentIfMissing="false"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="false" >		
+			 <Button
+			     android:id="@+id/pre"
+			     android:layout_width="fill_parent"
+			     android:layout_height="fill_parent"
+			     android:layout_weight="1.0"
+			     android:background="@drawable/pre_"
+			     android:layout_marginLeft="2dip"
+			     android:layout_marginRight="2dip" />
+			 <Button
+			     android:id="@+id/next"
+			     android:layout_width="fill_parent"
+			     android:layout_height="fill_parent"
+			     android:layout_weight="1.0"
+			     android:background="@drawable/next_"
+			     android:layout_marginLeft="2dip"
+			     android:layout_marginRight="2dip" />	
+	    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

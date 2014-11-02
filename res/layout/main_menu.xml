@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_close" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"    
+   >            	  
+        <LinearLayout 
+        	android:id="@+id/menu_close_btn" 
+    		android:layout_width="260dip" 
+    		android:layout_height="50dip" 
+    		android:orientation="vertical" 
+    		android:gravity="center" 
+    		android:layout_marginLeft="8dip"
+    		android:background="#F8F8F8"
+    	  	>    			   
+    	<TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="4dip"
+             android:padding="5dp"
+             android:text="退出"
+             android:textColor="#333">
+    	    
+    	</TextView>   			  
+      </LinearLayout> 	  			      
+</LinearLayout>

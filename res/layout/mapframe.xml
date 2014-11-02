@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_marginTop="6.0dip" 
+        android:layout_marginRight="6.0dip" 
+        android:layout_alignParentRight="true">
+        <ImageButton
+             android:id="@+id/road_condition" 
+             android:background="@drawable/main_button" 
+             android:layout_width="40.0dip" 
+             android:layout_height="40.0dip" 
+             android:src="@drawable/main_icon_roadcondition_off" 
+             android:layout_alignParentRight="true" />
+        <ImageButton 
+            android:id="@+id/map_layers" 
+            android:background="@drawable/main_button" 
+            android:layout_width="40.0dip" 
+            android:layout_height="40.0dip" 
+            android:layout_marginTop="4.0dip" 
+            android:src="@drawable/main_icon_maplayers" 
+            android:layout_below="@id/road_condition" 
+            android:layout_alignParentRight="true" />
+        <ImageButton 
+            android:id="@+id/map_street" 
+            android:background="@drawable/main_button" 
+            android:layout_width="40.0dip" 
+            android:layout_height="40.0dip" 
+            android:layout_marginTop="4.0dip" 
+            android:src="@drawable/main_map_icon_streetscape" 
+            android:layout_below="@id/map_layers" 
+            android:layout_alignParentRight="true" />
+        <ImageButton 
+            android:id="@+id/map_clear" 
+            android:background="@drawable/main_button" 
+            android:visibility="gone" 
+            android:layout_width="40.0dip" 
+            android:layout_height="40.0dip" 
+            android:layout_marginTop="4.0dip"
+             android:src="@drawable/map_delete" 
+             android:layout_below="@id/map_street" 
+             android:layout_alignParentRight="true" />
+        <ImageButton 
+            android:id="@+id/map_ar" 
+            android:background="@drawable/main_button" 
+            android:visibility="gone" 
+            android:layout_width="40.0dip" 
+            android:layout_height="40.0dip" 
+            android:layout_marginTop="4.0dip" 
+            android:src="@drawable/main_map_icon_ar_normal" 
+            android:layout_below="@id/map_clear" 
+            android:layout_alignParentRight="true" />
+        <ImageButton 
+            android:id="@+id/map_search" 
+            android:background="@drawable/main_button" 
+            android:visibility="gone" 
+            android:layout_width="40.0dip" 
+            android:layout_height="40.0dip" 
+            android:layout_marginTop="4.0dip" 
+            android:src="@drawable/main_map_icon_research" 
+            android:layout_below="@id/map_ar" 
+            android:layout_alignParentRight="true" />
+        <RelativeLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="fill_parent" 
+            android:layout_below="@id/map_search" 
+            android:layout_alignParentRight="true">
+            <ImageButton 
+                android:id="@+id/map_route_search" 
+                android:background="@drawable/main_button" 
+                android:visibility="gone" 
+                android:layout_width="40.0dip" 
+                android:layout_height="40.0dip" 
+                android:layout_marginTop="4.0dip" 
+                android:src="@drawable/main_map_icon_research_route" 
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:layout_width="40.0dip" 
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="6.0dip" 
+            android:layout_alignParentRight="true" 
+            android:layout_alignParentBottom="true">
+            <ImageButton 
+                android:id="@+id/zoom_in" 
+                android:background="@drawable/main_topbutton" 
+                android:layout_width="fill_parent" 
+                android:layout_height="40.0dip" 
+                android:src="@drawable/main_zoomin" />
+            <ImageButton 
+                android:id="@+id/zoom_out" 
+                android:background="@drawable/main_bottombutton" 
+                android:layout_width="fill_parent" 
+                android:layout_height="40.0dip" 
+                android:src="@drawable/main_zoomout" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

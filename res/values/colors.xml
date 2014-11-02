@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="voice_pressed_bkg">#ffcccccc</color>
+    <color name="common_text_btn_pressed">#ffd9d9d9</color>
+    <color name="main_map_scene_button_color">#ff4f4444</color>
+</resources>

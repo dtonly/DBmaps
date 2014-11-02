@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225.0dip"
+        android:background="@drawable/user_center_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_topbar_high"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/common_topbar_high" >
+
+            <TextView
+                android:id="@+id/tv_topbar_middle_tool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="我的地图"
+                android:textAppearance="@style/CommonTopBarMiddleText" />
+
+            <ImageView
+                android:id="@id/iv_topbar_left_back"
+                android:layout_width="@dimen/common_left_backbtn_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/common_icon_back_btn_selector" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/user_detail_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="60dip"
+            android:background="#33000000"
+            android:orientation="vertical"
+            android:weightSum="2.0" >
+            <TextView
+                android:id="@+id/user_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingTop="4.0dip"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:paddingBottom="4.0dip"
+                android:text=""
+                android:textColor="#80ffffff"
+                android:textSize="12.0sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

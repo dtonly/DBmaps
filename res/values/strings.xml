@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DBmaps</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="common_searchbox_home_text">搜索</string>
+    <string name="layer_satellite">卫星图</string>
+    <string name="layer_2d">2D平面图</string>
+    <string name="common_topbar_right_text_options">选项</string>
+    <string name="common_topbar_right_text_search">搜索</string>
+</resources>

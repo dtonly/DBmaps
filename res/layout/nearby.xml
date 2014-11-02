@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scene_list_item_border_kuang"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E2E2E1"
+    android:foreground="@drawable/scene_list_item_border" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="54.0dip" >
+
+        <LinearLayout
+            android:id="@+id/scene_primary_layout"          
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3.0" >
+            <RelativeLayout
+                android:id="@+id/scene_primary_button"
+                android:layout_width="0.0dip"
+                android:layout_height="132.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/scene_btn_bg"
+                android:clickable="true"
+                android:paddingTop="10.0dip" >
+                <RelativeLayout
+                    android:id="@+id/primaryBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" >
+                    <TextView
+                        android:id="@+id/tv_scene_primary_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:clickable="false"
+                        android:gravity="left"
+                        android:text="交通设施"
+                        android:textColor="#29C1F2"
+                        android:textSize="@dimen/scene_primary_text" />
+                    <ImageView
+                        android:id="@+id/iv_scene_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/main_map_drawer_icon_poi_scene_jiaotongsheshi"
+                        
+                         />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/iv_scene_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/scenebutton0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="公交站"
+                    android:background="@drawable/scene_btn_bg"
+                    android:textColor="#E95748"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="火车票代售点"
+                    android:background="@drawable/scene_btn_bg"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="停车场"
+                    android:background="@drawable/scene_btn_bg"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/scenebutton3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="加油站"
+                    android:background="@drawable/scene_btn_bg"
+                    android:paddingRight="2.0dip"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="长途汽车站"
+                    android:background="@drawable/scene_btn_bg"
+                    android:paddingRight="2.0dip"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="火车站"
+                    android:background="@drawable/scene_btn_bg"
+                    android:paddingRight="2.0dip"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/scene_listitem_tablelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/scene_primary_layout"
+            android:layout_alignRight="@id/scene_primary_layout"
+            android:layout_below="@+id/scene_primary_layout"
+            android:orientation="vertical"
+            android:stretchColumns="0,1,2,3" />
+        
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/scene_primary_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="135dip"
+            android:weightSum="3.0" >
+            <RelativeLayout
+                android:id="@+id/scene_primary_button"
+                android:layout_width="0.0dip"
+                android:layout_height="132.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/scene_btn_bg"
+                android:clickable="true"
+                android:paddingTop="10.0dip" >
+                <RelativeLayout
+                    android:id="@+id/primaryBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" >
+                    <TextView
+                        android:id="@+id/tv_scene_primary_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:clickable="false"
+                        android:text="生活服务"
+                        android:gravity="left"
+                        android:textColor="#6CE26C"
+                        android:textSize="@dimen/scene_primary_text" />
+                    <ImageView
+                        android:id="@+id/iv_scene_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/main_map_drawer_icon_poi_scene_shenghuofuwu" />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/iv_scene_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/scenebutton6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="超市"
+                    android:background="@drawable/scene_btn_bg"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="ATM"
+                    android:background="@drawable/scene_btn_bg"
+                    android:textColor="#E95748"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="医院"
+                    android:background="@drawable/scene_btn_bg"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/scenebutton9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="药店"
+                    android:background="@drawable/scene_btn_bg"
+                    android:paddingRight="2.0dip"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="银行"
+                    android:background="@drawable/scene_btn_bg"
+                    android:paddingRight="2.0dip"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="厕所"
+                    android:background="@drawable/scene_btn_bg"
+                    android:paddingRight="2.0dip"
+                    android:textColor="#E95748"
+                    android:textSize="@dimen/scene_secondary_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/scene_listitem_tablelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/scene_primary_layout"
+            android:layout_alignRight="@id/scene_primary_layout"
+            android:layout_below="@+id/scene_primary_layout"
+            android:orientation="vertical"
+            android:stretchColumns="0,1,2,3" />
+        
+
+           <LinearLayout
+            android:id="@+id/scene_primary_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="270dip"
+            android:weightSum="3.0" >
+            <RelativeLayout
+                android:id="@+id/scene_primary_button"
+                android:layout_width="0.0dip"
+                android:layout_height="132.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/scene_btn_bg"
+                android:clickable="true"
+                android:paddingTop="10.0dip" >
+                <RelativeLayout
+                    android:id="@+id/primaryBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" >
+                    <TextView
+                        android:id="@+id/tv_scene_primary_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:clickable="false"
+                        android:text="美食"
+                        android:gravity="left"
+                        android:textColor="#FF9C07"
+                        android:textSize="@dimen/scene_primary_text" />
+                    <ImageView
+                        android:id="@+id/iv_scene_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/main_map_drawer_icon_poi_scene_meishi" />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/iv_scene_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/scenebutton12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="中餐"
+                    android:background="@drawable/scene_btn_bg"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="川菜"
+                    android:background="@drawable/scene_btn_bg"
+                    android:textColor="#E95748"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="火锅"
+                    android:background="@drawable/scene_btn_bg"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/scenebutton15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="小吃快餐"
+                    android:background="@drawable/scene_btn_bg"
+                    android:paddingRight="2.0dip"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="西餐"
+                    android:background="@drawable/scene_btn_bg"
+                    android:paddingRight="2.0dip"
+                    android:textColor="@color/main_map_scene_button_color"
+                    android:textSize="@dimen/scene_secondary_text" />
+
+                <Button
+                    android:id="@+id/scenebutton17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="肯德基"
+                    android:background="@drawable/scene_btn_bg"
+                    android:paddingRight="2.0dip"
+                    android:textColor="#E95748"
+                    android:textSize="@dimen/scene_secondary_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/scene_listitem_tablelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/scene_primary_layout"
+            android:layout_alignRight="@id/scene_primary_layout"
+            android:layout_below="@+id/scene_primary_layout"
+            android:orientation="vertical"
+            android:stretchColumns="0,1,2,3" />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_topbar_high"
+        android:background="@drawable/common_top_layer_without_projection_bg"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/common_topbar_high" >
+
+        <TextView
+            android:id="@+id/tv_topbar_middle_tool"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="附近"
+            android:textAppearance="@style/CommonTopBarMiddleText" />
+
+        <ImageView
+            android:id="@id/iv_topbar_left_back"
+            android:layout_width="@dimen/common_left_backbtn_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/common_icon_back_btn_selector" />
+    </RelativeLayout>
+
+</FrameLayout>

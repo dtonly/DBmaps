@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_topbar_high"
+        android:background="@drawable/common_top_layer_without_projection_bg"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/common_topbar_high" >
+
+        <TextView
+            android:id="@+id/tv_topbar_middle_tool"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="工具"
+            android:textAppearance="@style/CommonTopBarMiddleText" />
+
+        <ImageView
+            android:id="@id/iv_topbar_left_back"
+            android:layout_width="@dimen/common_left_backbtn_width"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"            
+            android:clickable="true"
+            android:src="@drawable/common_icon_back_btn_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/common_top_layer_without_projection_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:src="@drawable/icon_messure_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginLeft="5dip"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/measure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:text="测距"
+            android:textColor="#ff333333"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/common_top_layer_without_projection_bg"
+        android:orientation="vertical" >
+        <ImageView
+            android:src="@drawable/icon_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/script"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:text="截图"
+            android:textColor="#ff333333"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/common_top_layer_without_projection_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:src="@drawable/icon_messure_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginLeft="5dip"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/measurepolygon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:text="面积"
+            android:textColor="#ff333333"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+    <com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	    android:visibility="invisible" 
+	/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="common_searchbox_home_magnifier_margin">12.0dip</dimen>
+    <dimen name="common_topbar_high">54.0dip</dimen>
+    <dimen name="common_left_backbtn_width">54.0dip</dimen>
+    <dimen name="common_right_text_width">54.0dip</dimen>
+    <dimen name="common_topbar_right_searchbtn_width">48.0dip</dimen>
+    <dimen name="common_topbar_right_searchbtn_high">34.0dip</dimen>
+    <dimen name="common_topbar_right_searchbtn_marginright">10.0dip</dimen>  
+    <dimen name="route_search_input_box_margin">-2.0dip</dimen> 
+     <dimen name="title_bar_height">45.0dip</dimen>
+    <dimen name="title_bar_btn_height">32.0dip</dimen>
+    <dimen name="title_bar_btn_margin">6.6999817dip</dimen>
+    <dimen name="title_bar_btn_tx_size">14.0dip</dimen>
+    <dimen name="title_bar_title_tx_size">18.0dip</dimen> 
+    <dimen name="scene_secondary_text">14.0dip</dimen>
+    <dimen name="scene_primary_text">20.0dip</dimen>
+</resources>
