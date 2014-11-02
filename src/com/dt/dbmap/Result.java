@@ -44,7 +44,7 @@ public class Result extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mBMapMan = new BMapManager(getApplication());
-		mBMapMan.init("zwLfj1rEdfrp2stnbqFAtzWI", null);
+		mBMapMan.init("EimeukKOqcU5fZGSVaIQMLVp", null);
 		setContentView(R.layout.nearby_result);
 		text = (TextView) findViewById(R.id.title);
 		mMapView = (MapView) findViewById(R.id.map_layout_stub);

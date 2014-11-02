@@ -93,7 +93,7 @@ public class RoutePlan extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mBMapMan = new BMapManager(getApplication());
-		mBMapMan.init("zwLfj1rEdfrp2stnbqFAtzWI", null);
+		mBMapMan.init("EimeukKOqcU5fZGSVaIQMLVp", null);
 		// 注意：请在试用setContentView前初始化BMapManager对象，否则会报错
 		setContentView(R.layout.routesearch);
 		mMapView = (MyMapView) findViewById(R.id.bmapView);

@@ -42,7 +42,7 @@ public class Tools extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mBMapMan = new BMapManager(getApplication());
-		mBMapMan.init("zwLfj1rEdfrp2stnbqFAtzWI", null);
+		mBMapMan.init("EimeukKOqcU5fZGSVaIQMLVp", null);
 		setContentView(R.layout.tools);
 		leftBack = (ImageView) findViewById(R.id.iv_topbar_left_back);
 		measure = (TextView) findViewById(R.id.measure);

@@ -49,7 +49,7 @@ public class GeometryPolygon extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mBMapMan = new BMapManager(getApplication());
-		mBMapMan.init("zwLfj1rEdfrp2stnbqFAtzWI", null);
+		mBMapMan.init("EimeukKOqcU5fZGSVaIQMLVp", null);
 		setContentView(R.layout.measure);
 		// 初始化地图
 		mMapView = (MyMapView) findViewById(R.id.mymapView);
